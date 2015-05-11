@@ -10,6 +10,8 @@
     "type": "git",
     "url": "https://github.com/bridgs/gamecarrot.git"
   },
+  "dependencies": {
+  },
   "keywords": [
     "multiplayer",
     "game",
