@@ -1,4 +1,4 @@
-bundle:
-	./node_modules/.bin/browserify client/index.js -o client/build/gamecarrot-client.js
+build:
+	./node_modules/.bin/browserify client/exports.js -o build/gamecarrot-client.js
 
-.PHONY: bundle
+.PHONY: build

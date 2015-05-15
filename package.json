@@ -11,7 +11,8 @@
     "url": "https://github.com/bridgs/gamecarrot.git"
   },
   "dependencies": {
-    "browserify": "^10.1.3"
+    "browserify": "^10.1.3",
+    "socket.io": "^1.3.5"
   },
   "keywords": [
     "multiplayer",
