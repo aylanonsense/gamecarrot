@@ -1,15 +1,16 @@
-// var EventHelper = require('../shared/EventHelper');
-// var events = new EventHelper([ 'connect' ]);
+var EventHelper = require('../../shared/EventHelper');
+var events = new EventHelper([ 'connect' ]);
 
-// var Connection = require('./Connection');
+var Connection = require('./Connection');
 // var connections = [];
 
 module.exports = {
 	handleSocket: function(socket) {
+		var conn = new Connection(socket);
 		//TODO
 	},
 	on: function(eventName, callback) {
-		// events.on(eventName, callback);
+		events.on(eventName, callback);
 	},
 	forEach: function(callback) {
 		//TODO

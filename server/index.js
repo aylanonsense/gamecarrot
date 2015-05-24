@@ -1,6 +1,6 @@
 var socketIO = require('socket.io');
 var SimulationLibrary = require('./SimulationLibrary');
-var ConnectionServer = require('./ConnectionServer');
+// var ConnectionServer = require('./ConnectionServer');
 
 //same trick as socket.io -- read in the client source code and serve it
 var read = require('fs').readFileSync;
@@ -20,7 +20,7 @@ module.exports = {
 		//handle incoming sockets
 		var socketServer = socketIO(server, opts);
 		socketServer.on('connection', function(socket) {
-			ConnectionServer.handleSocket(socket);
+			// ConnectionServer.handleSocket(socket);
 		});
 		return socketServer;
 	},
